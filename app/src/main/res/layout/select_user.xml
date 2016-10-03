@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/darkpurple"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter user to message"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="65sp"
+        android:id="@+id/other_user_editText" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:text="@string/enter_name"
+        android:onClick="onSendOtherUserInfo"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
